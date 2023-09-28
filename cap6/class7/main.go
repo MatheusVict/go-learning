@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+var y interface{}
+
 func main() {
 	x := 10
 
@@ -39,5 +41,29 @@ func main() {
 	switch x {
 	case x + 5:
 		fmt.Println("aaa")
+	}
+
+	y = true
+
+	switch y.(type) {
+	case int:
+		println("int")
+	case float64:
+		println("float")
+	case string:
+		println("string")
+	case bool:
+		print("bool")
+	}
+
+	switch z := 0; {
+	case z == 1:
+		println("int")
+	case z == 2:
+		println("float")
+	case z == 3:
+		println("string")
+	case z == 4:
+		print("bool")
 	}
 }
