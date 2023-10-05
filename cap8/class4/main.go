@@ -19,4 +19,6 @@ func main() {
 		fmt.Println(teastes[i])
 	}
 
+	teastes = append(teastes[:2], teastes[3:]...)
+
 }
