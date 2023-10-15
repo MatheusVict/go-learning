@@ -11,7 +11,7 @@ func main() {
 	channel2 := make(chan int)
 	funcs := 5
 
-	go send(100, channel1)
+	go send(10, channel1)
 	go another(funcs, channel1, channel2)
 
 	for v := range channel2 {
@@ -38,9 +38,9 @@ func another(funcs int, channel1 chan int, channel2 chan int) {
 			wg.Done()
 
 		}()
-		wg.Wait()
-		close(channel2)
 	}
+	wg.Wait()
+	close(channel2)
 	for v := range channel1 {
 		go func(x int) {
 			channel2 <- work(x)
