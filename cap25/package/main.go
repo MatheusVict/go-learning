@@ -1,9 +1,9 @@
-// Main is test package near to be deleted
-package main
+// Package hello hello is test package near to be deleted
+package hello
 
 import "fmt"
 
-// hello is a function maaaaaaaaaaaan
+// Hello hello is a function maaaaaaaaaaaan
 func Hello() {
 	fmt.Println("YEEAAAA")
 }
