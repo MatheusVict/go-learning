@@ -8,7 +8,7 @@ import (
 
 var group = sync.WaitGroup{}
 
-// go run -race main.go
+// go run -race test.go
 func main() {
 	fmt.Println("CPUs: ", runtime.NumCPU())
 	fmt.Println("Goroutine: ", runtime.NumGoroutine())

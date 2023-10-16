@@ -9,7 +9,7 @@ import (
 
 var group = sync.WaitGroup{}
 
-// go run -race main.go
+// go run -race test.go
 func main() {
 	var count int64
 	count = 0
