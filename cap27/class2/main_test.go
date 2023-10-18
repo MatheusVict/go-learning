@@ -7,7 +7,7 @@ type test struct {
 	answer int
 }
 
-// Table tests
+// TestSumTable Table tests
 func TestSumTable(t *testing.T) {
 	tests := []test{
 		{data: []int{1, 2, 3}, answer: 6},
